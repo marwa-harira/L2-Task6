@@ -1,0 +1,99 @@
+.sign-in-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 127px;
+    margin: 0 auto;
+    max-width: 430px;
+}
+
+
+.section-title-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.sign-in-container {
+    width: 100%;
+    text-align: center;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+.sign-in-button {
+    margin-bottom: 14px;
+    width: 100%;
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-in-footer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .sign-in-section {
+        padding: 0 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .sign-in-button {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 57px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .sign-in-section {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .sign-in-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .input-group input,
+    .sign-in-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sign-in-button {
+        padding: 12px;
+        font-weight: 500;
+    }
+
+    .sign-in-footer {
+        font-size: 12px;
+        margin-bottom: 57px;
+    }
+}

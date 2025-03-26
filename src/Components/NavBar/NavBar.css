@@ -1,0 +1,141 @@
+nav {
+    width: 95%;
+    height: 58px;
+    padding: 0 70px;
+    background-color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #090d1f;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 23px 0;
+}
+
+.items {
+    display: flex;
+    gap: 36px;
+    font-size: 16px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 14px;
+    padding: 15px 0;
+}
+
+li {
+
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+ul li a[href='/'] {
+    font-weight: 600;
+    color: #7F56D9;
+}
+
+a.active {
+    font-weight: 600;
+    color: #7F56D9;
+}
+
+
+button {
+    width: 120px;
+    height: 38px;
+    font-weight: 500;
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+button {
+    width: 120px;
+    height: 38px;
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
